@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d">
+<title id="t">Return to the Homeland</title><desc id="d">A symbolic house, path and community circle in ABAS colors.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#fbf7ed"/><stop offset="1" stop-color="#e5eef8"/></linearGradient><linearGradient id="sky" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#063b82"/><stop offset="1" stop-color="#002f69"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#bg)"/>
+<circle cx="620" cy="120" r="210" fill="url(#sky)" opacity=".10"/>
+<path d="M0 390C150 330 265 350 380 395S650 445 800 360V500H0Z" fill="#063b82" opacity=".10"/>
+<path d="M390 345C455 290 515 250 575 225" fill="none" stroke="#dfb75c" stroke-width="18" stroke-linecap="round" opacity=".9"/>
+<path d="M520 210l95-76 95 76v120H520Z" fill="#fffdfa" stroke="#063b82" stroke-width="12" stroke-linejoin="round"/>
+<path d="M500 212l115-92 115 92" fill="none" stroke="#063b82" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="590" y="250" width="50" height="80" rx="4" fill="#f2b71b"/>
+<circle cx="250" cy="235" r="72" fill="#063b82" opacity=".95"/>
+<circle cx="250" cy="213" r="24" fill="#fbf7ed"/>
+<path d="M190 285c18-44 42-65 60-65s42 21 60 65" fill="#fbf7ed"/>
+<circle cx="160" cy="270" r="44" fill="#2f7d4a" opacity=".9"/>
+<circle cx="340" cy="275" r="44" fill="#b65a52" opacity=".85"/>
+<path d="M142 280c12-24 24-36 36-36 11 0 22 12 34 36M322 285c12-24 24-36 36-36 11 0 22 12 34 36" fill="none" stroke="#fffdfa" stroke-width="12" stroke-linecap="round"/>
+<text x="60" y="80" font-family="Georgia,serif" font-size="46" font-weight="700" fill="#12335f">RPN</text>
+<text x="60" y="122" font-family="Arial,sans-serif" font-size="24" fill="#42577a">Solidarity • Family • Homeland</text>
+</svg>

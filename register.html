@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ABAS — Member registration</title>
+  <link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body class="portal-page">
+<main class="portal-card portal-card-wide">
+  <a href="members.html" class="back-link">← ABAS</a>
+  <img src="assets/logo-sv-ng.svg" class="portal-logo" alt="ABAS">
+  <h1>Member registration</h1>
+  <p>Create your account. New registrations require ABAS approval before private member content is available.</p>
+
+  <div id="authMessage" class="auth-message" hidden></div>
+
+  <form class="portal-form" id="registerForm">
+    <div class="contact-grid">
+      <label>First name
+        <input id="firstName" type="text" autocomplete="given-name" required>
+      </label>
+      <label>Last name
+        <input id="lastName" type="text" autocomplete="family-name" required>
+      </label>
+    </div>
+    <div class="contact-grid">
+      <label>Phone
+        <input id="phone" type="tel" autocomplete="tel">
+      </label>
+      <label>City
+        <input id="city" type="text" autocomplete="address-level2">
+      </label>
+    </div>
+    <label>Email
+      <input id="email" type="email" autocomplete="email" required>
+    </label>
+    <div class="contact-grid">
+      <label>Password
+        <input id="password" type="password" autocomplete="new-password" minlength="8" required>
+      </label>
+      <label>Confirm password
+        <input id="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
+      </label>
+    </div>
+    <p class="contact-privacy">Your account starts with pending status. An ABAS administrator must approve it.</p>
+    <button class="btn primary" id="registerButton" type="submit">Register</button>
+  </form>
+
+  <div class="portal-links"><a href="login.html">Already registered? Sign in</a></div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="auth.js"></script>
+<script src="register.js"></script>
+</body>
+</html>

@@ -1,2 +1,38 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ABAS — Member sign in</title><link rel="stylesheet" href="styles.css?v=14"></head>
-<body class="portal-page"><main class="portal-card"><a href="members.html" class="back-link">← ABAS</a><img src="assets/logo-sv-ng.svg" class="portal-logo" alt="ABAS"><h1>Member sign in</h1><p>This interface is ready for a future secure member area. Real authentication must be connected before publication.</p><form class="portal-form" onsubmit="event.preventDefault()"><label>Email<input type="email" autocomplete="email"></label><label>Password<input type="password" autocomplete="current-password"></label><button class="btn primary" type="submit" disabled>Sign in — coming soon</button></form></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ABAS — Member sign in</title>
+  <link rel="stylesheet" href="styles.css?v=15">
+</head>
+<body class="portal-page">
+<main class="portal-card">
+  <a href="members.html" class="back-link">← ABAS</a>
+  <img src="assets/logo-sv-ng.svg" class="portal-logo" alt="ABAS">
+  <h1>Member sign in</h1>
+  <p>Sign in to access the ABAS member area.</p>
+
+  <div id="authMessage" class="auth-message" hidden></div>
+
+  <form class="portal-form" id="loginForm">
+    <label>Email
+      <input id="email" type="email" autocomplete="email" required>
+    </label>
+    <label>Password
+      <input id="password" type="password" autocomplete="current-password" required>
+    </label>
+    <button class="btn primary" id="loginButton" type="submit">Sign in</button>
+  </form>
+
+  <div class="portal-links">
+    <a href="register.html">Register as a member</a>
+    <a href="forgot-password.html">Forgot password?</a>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="auth.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
