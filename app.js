@@ -2,7 +2,7 @@ const content = {
   sv: {
     logo:'assets/logo-sv-ng.svg',
     brandSubtitle:'Många rötter. En starkare framtid.',
-  brandAssociation:'Bamilékéföreningen i Sverige',
+  brandAssociation:'Bamilékéfolkföreningen i Sverige',
     nav:['Hem','ABAS','Aktiviteter','Medlemmar','Bli medlem','Ge en gåva'],
     heroEyebrow:'Bamilékefolket • Sverige • Gemenskap', heroTitle:'Många rötter. En starkare framtid.',
     heroText:'ABAS är en kulturförening som grundades i Stockholm 2007. Vi länkar bamilékéernas värderingar med ett starkare samhälle genom kultur, utbildning, integration och solidaritet.',
