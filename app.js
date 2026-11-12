@@ -159,13 +159,18 @@ function renderQaGuide(qd){
     return `<section class="qa-section" id="qa-section-${si}"><div class="qa-section-head"><h2>${sec.title}</h2><small>${sec.source}</small></div>${rows}${table}</section>`;
   }).join('');
   /*return `<div class="qa-layout"><aside class="qa-nav" aria-label="${labels.title}"><h2>${labels.title}</h2><a class="qa-nav-top" href="#qa-top">${labels.top}</a>${nav}</aside><article class="qa-guide" id="qa-top"><div class="qa-downloads"><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswers_Focus.docx">${qd.downloads.focus} ↓</a><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">${qd.downloads.full} ↓</a><a class="btn secondary" href="docs/RPN_Avtal_SP7980239_2.pdf" target="_blank" rel="noopener">${qd.downloads.agreement} ↗</a><a class="btn secondary" href="docs/RPN_Villkor_SP7980239.pdf" target="_blank" rel="noopener">${qd.downloads.conditions} ↗</a></div><p class="lead">${qd.intro}</p><div class="qa-facts">${policy}</div>${sections}</article></div>`;*/
-  return `<div class="qa-layout"><aside class="qa-nav" aria-label="${labels.title}"><h2>${labels.title}</h2>${nav}</aside><article class="qa-guide" id="qa-top"><div class="qa-downloads"><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswers_Focus.docx">${qd.downloads.focus} ↓</a><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">${qd.downloads.full} ↓</a><a class="btn secondary" href="docs/RPN_Avtal_SP7980239_2.pdf" target="_blank" rel="noopener">${qd.downloads.agreement} ↗</a><a class="btn secondary" href="docs/RPN_Villkor_SP7980239.pdf" target="_blank" rel="noopener">${qd.downloads.conditions} ↗</a> 
+  return `<div class="qa-layout"><aside class="qa-nav" aria-label="${labels.title}"><h2>${labels.title}</h2>${nav}</aside><article class="qa-guide" id="qa-top">
+   <div class="qa-downloads">
+   <a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswers_Focus.docx">${qd.downloads.focus} ↓</a>
+   <a class="btn secondary" href="docs/RPN_Avtal_SP7980239_2.pdf" target="_blank" rel="noopener">${qd.downloads.agreement} ↗</a>
+   <a class="btn secondary" href="docs/RPN_Villkor_SP7980239.pdf" target="_blank" rel="noopener">${qd.downloads.conditions} ↗</a> 
   <a class="btn participate-btn"
    href="https://forms.gle/mwW33D3T1kRHyYG5A"
    target="_blank"
    rel="noopener">
    ${qd.downloads.participate} ↗
-</a> ↗
+</a> 
+<a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">${qd.downloads.full} ↓</a>
   </a></div><p class="lead">${qd.intro}</p><div class="qa-facts">${policy}</div>${sections}</article></div>`;
 }
 
