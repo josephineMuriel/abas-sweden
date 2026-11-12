@@ -334,9 +334,24 @@ body[data-lang="en"] .page-hero,body[data-lang="fr"] .page-hero{background-image
 .qa-fact{display:grid;grid-template-columns:minmax(140px,42%) 1fr;gap:12px;padding:13px 15px;background:#fff;font-size:13px}.qa-fact span{color:var(--muted)}.qa-fact strong{color:var(--ink)}
 .qa-section{margin:38px 0}.qa-section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:12px;padding-bottom:10px;border-bottom:2px solid var(--navy)}
 .qa-section-head h2{font-size:28px;margin:0}.qa-section-head small{color:var(--muted);text-align:right}
-.qa-row{display:grid;grid-template-columns:minmax(270px,38%) 1fr;border-bottom:1px solid var(--line);background:#fff}
-.qa-row:nth-child(even){background:#fcfbf7}.qa-question,.qa-answer{padding:15px 18px;line-height:1.55}
-.qa-question{display:flex;gap:10px;align-items:flex-start;color:var(--ink);border-right:1px solid var(--line)}
+/*.qa-row{display:grid;grid-template-columns:minmax(270px,38%) 1fr;border-bottom:1px solid var(--line);background:#fff}*/
+.qa-row{
+    display:grid;
+    grid-template-columns:1fr;
+}
+.qa-row:nth-child(even){background:#fcfbf7}.qa-question,.qa-answer{padding:16px 20px;} /*;line-height:1.55*/
+.qa-question{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    border-right:none;
+    border-bottom:1px solid var(--line);
+}
+.qa-answer{
+    padding-top:14px;
+    padding-bottom:18px;
+}
+/*.qa-question{display:flex;gap:10px;align-items:flex-start;color:var(--ink);border-right:1px solid var(--line)}*/
 .qa-code{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:42px;padding:3px 7px;border-radius:999px;background:#eaf0f8;color:var(--navy);font-size:11px;font-weight:900}
 .qa-question strong{font-size:14px}.qa-answer{color:#53627a;font-size:14px}
 .qa-reduction-wrap{margin:18px 0 0;overflow:auto;border:1px solid var(--line);border-radius:12px}.qa-reduction{width:100%;border-collapse:collapse;background:#fff;font-size:13px}.qa-reduction th,.qa-reduction td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left}.qa-reduction th{background:#f4f7fb;color:var(--ink)}
