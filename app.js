@@ -120,7 +120,7 @@ const arrow='→';
 
 function currentTarget(){
   const p=document.body.dataset.page||'home';
-  if(p==='activitieshub'||p==='sdv') return 'activities.html';
+  if(p==='activitieshub'||p==='sdv'||p==='qa') return 'activities.html';
   if(p==='association') return 'association.html';
   if(['members','join','donate'].includes(p)) return `${p}.html`;
   return 'index.html';
@@ -137,9 +137,20 @@ function renderHome(c){
   if(news) news.innerHTML=c.news.map(n=>`<a class="news-card" href="${n[5]}"><img src="${n[4]}" alt=""><div class="news-copy"><div class="news-meta"><span>${n[0]}</span><strong class="${n[6]}">${n[1]}</strong></div><h3>${n[2]}</h3><p>${n[3]}</p><span class="news-more">${c.readMore} &nbsp;${arrow}</span></div></a>`).join('');
 }
 
+function renderQaGuide(qd){
+  if(!qd) return '';
+  const policy = qd.policy.map(x=>`<div class="qa-fact"><span>${x[0]}</span><strong>${x[1]}</strong></div>`).join('');
+  const sections = qd.sections.map(sec=>{
+    const rows = sec.items.map(x=>`<div class="qa-row"><div class="qa-question"><span class="qa-code">${x[0]}</span><strong>${x[1]}</strong></div><div class="qa-answer">${x[2]}</div></div>`).join('');
+    const table = sec.table ? `<div class="qa-reduction-wrap"><table class="qa-reduction"><thead><tr><th>Age / Ålder / Âge</th><th>Reduction</th></tr></thead><tbody>${sec.table.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</tbody></table></div>` : '';
+    return `<section class="qa-section"><div class="qa-section-head"><h2>${sec.title}</h2><small>${sec.source}</small></div>${rows}${table}</section>`;
+  }).join('');
+  return `<article class="qa-guide"><p class="lead">${qd.intro}</p><div class="qa-note">${qd.note}</div><div class="qa-downloads"><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswers_Focus.docx">${qd.downloads.focus} ↓</a><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">${qd.downloads.full} ↓</a><a class="btn secondary" href="docs/RPN_Avtal_SP7980239_2.pdf" target="_blank" rel="noopener">${qd.downloads.source} — Avtal ↗</a><a class="btn secondary" href="docs/RPN_Villkor_SP7980239.pdf" target="_blank" rel="noopener">${qd.downloads.source} — Villkor ↗</a></div><div class="qa-facts">${policy}</div>${sections}</article>`;
+}
+
 function renderStandalone(c){
   const target=document.getElementById('pageContent'); if(!target) return;
-  const page=document.body.dataset.page; let html=''; let kicker=''; let title='';
+  const page=document.body.dataset.page; const lang=document.body.dataset.lang||'sv'; let html=''; let kicker=''; let title='';
   if(page==='association'){
     kicker=c.aboutKicker; title=c.aboutTitle;
     html=`<div class="copy-stack">${paragraphs(c.aboutText)}</div><div class="content-divider"></div><p class="section-kicker">${c.visionKicker}</p><h2>${c.visionTitle}</h2><p class="lead">${c.visionText}</p><div class="pill-row">${c.pills.map(x=>`<span class="pill">${x}</span>`).join('')}</div><div class="content-divider"></div><p class="section-kicker">${c.boardKicker}</p><h2>${c.boardTitle}</h2>${c.boardHtml}`;
@@ -150,9 +161,12 @@ function renderStandalone(c){
   }
   if(page==='sdv'){
     kicker=c.sdvKicker||content.en.sdvKicker; title=c.sdvTitle||content.en.sdvTitle;
-    const lang=document.body.dataset.lang||'sv';
     const tpl=document.getElementById(`sdv-template-${['sv','en','fr'].includes(lang)?lang:'en'}`);
     html=tpl?tpl.innerHTML:'';
+  }
+  if(page==='qa'){
+    const qd=(window.ABAS_QA&&window.ABAS_QA[lang])||(window.ABAS_QA&&window.ABAS_QA.en);
+    kicker=qd?qd.kicker:'Member insurance'; title=qd?qd.title:'Insurance Q&A'; html=renderQaGuide(qd);
   }
   if(page==='members'){
     kicker=c.membersKicker; title=c.membersTitle;
