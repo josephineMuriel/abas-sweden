@@ -145,7 +145,8 @@ function renderHome(c){
 function renderQaGuide(qd){
   if(!qd) return '';
   const lang=document.body.dataset.lang||'sv';
-  const navLabels={sv:{title:'Frågor',top:'Översikt'},en:{title:'Questions',top:'Overview'},fr:{title:'Questions',top:'Aperçu'}};
+  /*const navLabels={sv:{title:'Frågor',top:'Översikt'},en:{title:'Questions',top:'Overview'},fr:{title:'Questions',top:'Aperçu'}};*/
+  const navLabels={sv:{title:'Frågor'},en:{title:'Questions'},fr:{title:'Questions'}};
   const labels=navLabels[lang]||navLabels.en;
   const policy = qd.policy.map(x=>`<div class="qa-fact"><span>${x[0]}</span><strong>${x[1]}</strong></div>`).join('');
   const nav = qd.sections.map((sec,si)=>{
@@ -157,7 +158,8 @@ function renderQaGuide(qd){
     const table = sec.table ? `<div class="qa-reduction-wrap"><table class="qa-reduction"><thead><tr><th>Age / Ålder / Âge</th><th>Reduction</th></tr></thead><tbody>${sec.table.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join('')}</tbody></table></div>` : '';
     return `<section class="qa-section" id="qa-section-${si}"><div class="qa-section-head"><h2>${sec.title}</h2><small>${sec.source}</small></div>${rows}${table}</section>`;
   }).join('');
-  return `<div class="qa-layout"><aside class="qa-nav" aria-label="${labels.title}"><h2>${labels.title}</h2><a class="qa-nav-top" href="#qa-top">${labels.top}</a>${nav}</aside><article class="qa-guide" id="qa-top"><div class="qa-downloads"><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswers_Focus.docx">${qd.downloads.focus} ↓</a><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">${qd.downloads.full} ↓</a><a class="btn secondary" href="docs/RPN_Avtal_SP7980239_2.pdf" target="_blank" rel="noopener">${qd.downloads.agreement} ↗</a><a class="btn secondary" href="docs/RPN_Villkor_SP7980239.pdf" target="_blank" rel="noopener">${qd.downloads.conditions} ↗</a></div><p class="lead">${qd.intro}</p><div class="qa-facts">${policy}</div>${sections}</article></div>`;
+  /*return `<div class="qa-layout"><aside class="qa-nav" aria-label="${labels.title}"><h2>${labels.title}</h2><a class="qa-nav-top" href="#qa-top">${labels.top}</a>${nav}</aside><article class="qa-guide" id="qa-top"><div class="qa-downloads"><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswers_Focus.docx">${qd.downloads.focus} ↓</a><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">${qd.downloads.full} ↓</a><a class="btn secondary" href="docs/RPN_Avtal_SP7980239_2.pdf" target="_blank" rel="noopener">${qd.downloads.agreement} ↗</a><a class="btn secondary" href="docs/RPN_Villkor_SP7980239.pdf" target="_blank" rel="noopener">${qd.downloads.conditions} ↗</a></div><p class="lead">${qd.intro}</p><div class="qa-facts">${policy}</div>${sections}</article></div>`;*/
+  return `<div class="qa-layout"><aside class="qa-nav" aria-label="${labels.title}"><h2>${labels.title}</h2>${nav}</aside><article class="qa-guide" id="qa-top"><div class="qa-downloads"><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswers_Focus.docx">${qd.downloads.focus} ↓</a><a class="btn secondary" href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">${qd.downloads.full} ↓</a><a class="btn secondary" href="docs/RPN_Avtal_SP7980239_2.pdf" target="_blank" rel="noopener">${qd.downloads.agreement} ↗</a><a class="btn secondary" href="docs/RPN_Villkor_SP7980239.pdf" target="_blank" rel="noopener">${qd.downloads.conditions} ↗</a></div><p class="lead">${qd.intro}</p><div class="qa-facts">${policy}</div>${sections}</article></div>`;
 }
 
 function renderStandalone(c){

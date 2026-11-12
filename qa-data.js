@@ -2,19 +2,20 @@ window.ABAS_QA = {
   en: {
     kicker: 'Member insurance',
     title: 'Insurance explained — Questions & Answers',
-    intro: 'A web-friendly focused guide to the ABAS group life insurance. Questions are on the left and answers on the right. This guide is explanatory and does not replace the If agreement or insurance conditions.',
+    intro: 'Guide to the ABAS group insurance. Questions are on the left and answers on the right. This guide is explanatory and does not replace the If agreement or insurance conditions.',
     note: '',
     policy: [
       ['Policyholder','ABAS — Association of Bamiléké in Sweden'],
       ['Insurance number','SP7980239.1.2'],
       ['Policy period','1 January–31 December 2027'],
       ['Persons named','24 in the certificate appendix'],
-      ['Annual premium','SEK 26,710'],
+      ['Monthly premium','SEK 89'],
+      ['Annual premium','SEK 1070'],
       ['Death / early-capital headings','15 Bb each in the ABAS certificate'],
       ['Life insurance deductible','None (Life §7)']
     ],
     downloads: {
-      focus: 'Focused Q&A',
+      focus: 'Most Important Q&A',
       full: 'Full Q&A',
       agreement: 'If Agreement (Avtal)',
       conditions: 'If General conditions (Villkor)'
@@ -57,11 +58,7 @@ window.ABAS_QA = {
         ['Q138','What reductions are shown after early capital has been paid?','The policy prints an age-based percentage reduction in remaining death capital. It is separate from the ordinary age-55 reduction. See the table below.'],
         ['Q139','Is the table age based on age at early-capital payment or age at death?','The displayed wording does not clearly state the reference point and stops at age 66. ABAS should ask If to confirm the age rule and treatment at ages 67–69.']
       ], table:[['≤29','20%'],['30','20%'],['31','20%'],['32','20%'],['33','20%'],['34','20%'],['35','18%'],['36','21%'],['37','24%'],['38','27%'],['39','30%'],['40','33%'],['41','36%'],['42','39%'],['43','42%'],['44','45%'],['45','48%'],['46','51%'],['47','54%'],['48','57%'],['49','60%'],['50','63%'],['51','66%'],['52','69%'],['53','72%'],['54','75%'],['55','78%'],['56','81%'],['57','84%'],['58','87%'],['59','90%'],['60','92%'],['61','94%'],['62','96%'],['63','98%'],['64','100%'],['65','100%'],['66','100%']]},
-      {title:'Child protection', source:'Life §5.2, Villkor p. 23', items:[
-        ['Q140','What is child protection (barnskydd)?','The standard life-product terms describe a child-death benefit for a legally inheriting child who dies before the end of the month in which the child turns 18.'],
-        ['Q143','How much is paid for a covered child’s death?','The terms describe one price base amount, paid to the child’s estate unless another valid beneficiary arrangement exists.'],
-        ['Q145','Does the ABAS certificate expressly list child protection?','No separate “Barnskydd” line appears in the certificate. Because the standard terms describe it but the certificate lists life and early capital, ABAS should obtain written confirmation from If.']
-      ]},
+     
       {title:'Early capital (förtidskapital)', source:'Life §5.3, Villkor pp. 23–24', items:[
         ['Q146','What is early capital?','A lump-sum benefit paid while the insured is alive for qualifying long-term inability to work due to illness or accident. It is not a funeral or death payment.'],
         ['Q147','Can I qualify after a short illness or temporary sick leave?','No. The terms require at least 25% incapacity for a total of 30 months within 36 months, or at least 50% sickness compensation (sjukersättning) from Försäkringskassan.'],
@@ -74,6 +71,11 @@ window.ABAS_QA = {
         ['Q154','Does the early-capital amount stay unchanged with age?','No. From age 30, the insured amount is reduced by 3% each year compared with the previous year’s amount; the reduction therefore compounds.'],
         ['Q155','Can the 30-month rule be completed during ABAS’s first one-year policy period?','The conditions require the qualifying time to be achieved while insured. ABAS should ask If whether time can span renewals, whether earlier insured time counts and how the sickness-compensation route works.'],
         ['Q156','Can early capital affect what my family receives when I die?','Yes. The separate §5.1.5 reduction table can reduce later death capital, in addition to other age-related rules. The interaction should be confirmed with If.']
+      ]}, 
+      {title:'Child protection', source:'Life §5.2, Villkor p. 23', items:[
+        ['Q140','What is child protection (barnskydd)?','The standard life-product terms describe a child-death benefit for a legally inheriting child who dies before the end of the month in which the child turns 18.'],
+        ['Q143','How much is paid for a covered child’s death?','The terms describe one price base amount, paid to the child’s estate unless another valid beneficiary arrangement exists.'],
+        ['Q145','Does the ABAS certificate expressly list child protection?','No separate “Barnskydd” line appears in the certificate. Because the standard terms describe it but the certificate lists life and early capital, ABAS should obtain written confirmation from If.']
       ]},
       {title:'Important exclusions', source:'Life §5.4, Villkor p. 24', items:[
         ['Q157','Are deaths or injuries connected to war or armed conflict covered?','Generally not when attributable to war, armed conflict or the listed peacekeeping/associated missions, subject to the narrow 30-day exception.'],
@@ -104,10 +106,12 @@ window.ABAS_QA = {
   },
   sv: {
     kicker:'Medlemsförsäkring', title:'Försäkringen förklarad — frågor och svar',
-    intro:'En webbvänlig fokuserad guide till ABAS grupp-livförsäkring. Frågorna visas till vänster och svaren till höger. Guiden är förklarande och ersätter inte If:s avtal eller försäkringsvillkor.',
+    intro:'En guide till ABAS grupp-livförsäkring. Frågorna visas till vänster och svaren till höger. Guiden är förklarande och ersätter inte If:s avtal eller försäkringsvillkor.',
     note:'',
-    policy:[['Försäkringstagare','ABAS – Association of Bamiléké in Sweden'],['Försäkringsnummer','SP7980239.1.2'],['Försäkringstid','1 januari–31 december 2027'],['Namngivna personer','24 i försäkringsbrevets bilaga'],['Årspremie','26 710 SEK'],['Dödsfall / förtidskapital','15 Bb vardera enligt ABAS försäkringsbrev'],['Självrisk för livförsäkring','Ingen (Liv §7)']],
-    downloads:{focus:'Fokuserad Q&A',full:'Full Q&A',agreement:'If-avtal',conditions:'If:s allmänna villkor'},
+    policy:[['Försäkringstagare','ABAS – Association of Bamiléké in Sweden'],['Försäkringsnummer','SP7980239.1.2'],['Försäkringstid','1 januari–31 december 2027'],
+    ['Namngivna personer','24 i försäkringsbrevets bilaga'],['Månadspremie','SEK 89'],['Årspremie','1070 SEK'],
+    ['Dödsfall / förtidskapital','15 Bb vardera enligt ABAS försäkringsbrev'],['Självrisk för livförsäkring','Ingen (Liv §7)']],
+    downloads:{focus:'Viktigaste Q&A',full:'Full Q&A',agreement:'If-avtal',conditions:'If:s allmänna villkor'},
     sections:[
       {title:'Viktiga avtals- och skadefrågor',source:'Villkor s. 6–20',items:[
         ['Q25','När ska dödsfall, sjukdom eller annan försäkringshändelse anmälas?','Anmäl till If utan dröjsmål. En sen anmälan kan påverka ersättningen; de detaljerade reglerna finns i allmänna villkor §2.3.'],
@@ -146,11 +150,7 @@ window.ABAS_QA = {
         ['Q138','Vilka minskningar anges efter utbetalt förtidskapital?','Villkoren visar en åldersbaserad procentuell minskning av återstående dödsfallskapital. Den är separat från den vanliga minskningen från 55 års ålder. Se tabellen nedan.'],
         ['Q139','Avser tabellens ålder åldern vid utbetalning av förtidskapital eller vid dödsfall?','Texten anger inte tydligt referensåldern och tabellen slutar vid 66 år. ABAS bör be If bekräfta åldersregeln och hanteringen av 67–69 år.']
       ],table:[['≤29','20%'],['30','20%'],['31','20%'],['32','20%'],['33','20%'],['34','20%'],['35','18%'],['36','21%'],['37','24%'],['38','27%'],['39','30%'],['40','33%'],['41','36%'],['42','39%'],['43','42%'],['44','45%'],['45','48%'],['46','51%'],['47','54%'],['48','57%'],['49','60%'],['50','63%'],['51','66%'],['52','69%'],['53','72%'],['54','75%'],['55','78%'],['56','81%'],['57','84%'],['58','87%'],['59','90%'],['60','92%'],['61','94%'],['62','96%'],['63','98%'],['64','100%'],['65','100%'],['66','100%']]},
-      {title:'Barnskydd',source:'Liv §5.2, Villkor s. 23',items:[
-        ['Q140','Vad är barnskydd?','Standardvillkoren för liv beskriver ersättning vid dödsfall för ett arvsberättigat barn före utgången av den månad barnet fyller 18 år.'],
-        ['Q143','Hur mycket betalas vid ett ersättningsbart barns dödsfall?','Villkoren beskriver ett prisbasbelopp till barnets dödsbo, om inget annat giltigt förmånstagarförordnande finns.'],
-        ['Q145','Anger ABAS försäkringsbrev uttryckligen barnskydd?','Nej, någon separat rad för Barnskydd finns inte. Eftersom standardvillkoren beskriver barnskydd men försäkringsbrevet listar liv och förtidskapital bör ABAS få skriftlig bekräftelse från If.']
-      ]},
+      
       {title:'Förtidskapital',source:'Liv §5.3, Villkor s. 23–24',items:[
         ['Q146','Vad är förtidskapital?','Ett engångsbelopp som kan betalas medan den försäkrade lever vid kvalificerande långvarig arbetsoförmåga på grund av sjukdom eller olycksfall. Det är inte en dödsfalls- eller begravningsersättning.'],
         ['Q147','Kan jag få förtidskapital efter kort sjukdom eller tillfällig sjukskrivning?','Nej. Villkoren kräver minst 25 % arbetsoförmåga i sammanlagt 30 månader under 36 månader, eller minst 50 % sjukersättning från Försäkringskassan.'],
@@ -163,6 +163,11 @@ window.ABAS_QA = {
         ['Q154','Är förtidskapitalets belopp oförändrat med åldern?','Nej. Från 30 års ålder minskas försäkringsbeloppet med 3 % per år jämfört med föregående års belopp, vilket innebär en sammansatt minskning.'],
         ['Q155','Kan 30-månadersregeln uppfyllas under ABAS första ettåriga försäkringsperiod?','Villkoren kräver att kvalifikationstiden uppnås medan personen är försäkrad. ABAS bör fråga If om tiden kan löpa över förnyelser, om tidigare försäkringstid räknas och hur sjukersättningsvägen fungerar.'],
         ['Q156','Kan utbetalt förtidskapital påverka vad familjen får vid dödsfall?','Ja. Tabellen i §5.1.5 kan minska senare dödsfallskapital, utöver andra åldersregler. Samspelet bör bekräftas med If.']
+      ]},
+      {title:'Barnskydd',source:'Liv §5.2, Villkor s. 23',items:[
+        ['Q140','Vad är barnskydd?','Standardvillkoren för liv beskriver ersättning vid dödsfall för ett arvsberättigat barn före utgången av den månad barnet fyller 18 år.'],
+        ['Q143','Hur mycket betalas vid ett ersättningsbart barns dödsfall?','Villkoren beskriver ett prisbasbelopp till barnets dödsbo, om inget annat giltigt förmånstagarförordnande finns.'],
+        ['Q145','Anger ABAS försäkringsbrev uttryckligen barnskydd?','Nej, någon separat rad för Barnskydd finns inte. Eftersom standardvillkoren beskriver barnskydd men försäkringsbrevet listar liv och förtidskapital bör ABAS få skriftlig bekräftelse från If.']
       ]},
       {title:'Viktiga undantag',source:'Liv §5.4, Villkor s. 24',items:[
         ['Q157','Täcks dödsfall eller skador kopplade till krig eller väpnad konflikt?','Som huvudregel nej när de kan hänföras till krig, väpnad konflikt eller de angivna fredsbevarande/relaterade uppdragen, med ett snävt 30-dagarsundantag.'],
@@ -193,10 +198,12 @@ window.ABAS_QA = {
   },
   fr: {
     kicker:'Assurance des membres', title:'L’assurance expliquée — Questions & Réponses',
-    intro:'Un guide ciblé et adapté au web sur l’assurance-vie collective ABAS. Les questions sont à gauche et les réponses à droite. Ce guide est explicatif et ne remplace ni le contrat ni les conditions d’assurance If.',
+    intro:'Guide sur l’assurance collective ABAS. Les questions sont à gauche et les réponses à droite. Ce guide est explicatif et ne remplace ni le contrat ni les conditions d’assurance If.',
     note:'',
-    policy:[['Souscripteur','ABAS – Association of Bamiléké in Sweden'],['Numéro d’assurance','SP7980239.1.2'],['Période','1 janvier–31 décembre 2027'],['Personnes nommées','24 dans l’annexe du certificat'],['Prime annuelle','26 710 SEK'],['Décès / capital anticipé','15 Bb chacun selon le certificat ABAS'],['Franchise de l’assurance-vie','Aucune (Vie §7)']],
-    downloads:{focus:'Q&A ciblée',full:'Q&A complète',agreement:'Contrat If (Avtal)',conditions:'Conditions générales If (Villkor)'},
+    policy:[['Souscripteur','ABAS – Association of Bamiléké in Sweden'],['Numéro d’assurance','SP7980239.1.2'],
+    ['Période','1 janvier–31 décembre 2027'],['Personnes nommées','24 dans l’annexe du certificat'],
+    ['Prime mensuelle','89 SEK'],['Prime annuelle','1070 SEK'],['Décès / capital anticipé','15 Bb chacun selon le certificat ABAS'],['Franchise de l’assurance-vie','Aucune (Vie §7)']],
+    downloads:{focus:'Q&A importantes',full:'Q&A complète',agreement:'Contrat If (Avtal)',conditions:'Conditions générales If (Villkor)'},
     sections:[
       {title:'Questions clés sur le contrat et les sinistres',source:'Villkor p. 6–20',items:[
         ['Q25','Quand faut-il déclarer un décès, une maladie ou un autre événement assuré ?','Il faut le déclarer à If sans délai. Une déclaration tardive peut affecter l’indemnisation ; les règles détaillées figurent au §2.3 des conditions générales.'],
@@ -235,11 +242,7 @@ window.ABAS_QA = {
         ['Q138','Quelles réductions sont prévues après versement du capital anticipé ?','La police imprime une réduction en pourcentage du capital décès restant selon l’âge. Elle est distincte de la réduction ordinaire à partir de 55 ans. Voir le tableau ci-dessous.'],
         ['Q139','L’âge du tableau correspond-il à l’âge lors du capital anticipé ou au décès ?','Le texte n’indique pas clairement le point de référence et le tableau s’arrête à 66 ans. ABAS doit demander à If de confirmer la règle et le traitement des 67–69 ans.']
       ],table:[['≤29','20%'],['30','20%'],['31','20%'],['32','20%'],['33','20%'],['34','20%'],['35','18%'],['36','21%'],['37','24%'],['38','27%'],['39','30%'],['40','33%'],['41','36%'],['42','39%'],['43','42%'],['44','45%'],['45','48%'],['46','51%'],['47','54%'],['48','57%'],['49','60%'],['50','63%'],['51','66%'],['52','69%'],['53','72%'],['54','75%'],['55','78%'],['56','81%'],['57','84%'],['58','87%'],['59','90%'],['60','92%'],['61','94%'],['62','96%'],['63','98%'],['64','100%'],['65','100%'],['66','100%']]},
-      {title:'Protection enfant',source:'Vie §5.2, Villkor p. 23',items:[
-        ['Q140','Qu’est-ce que la protection enfant (barnskydd) ?','Les conditions standard vie décrivent une prestation en cas de décès d’un enfant légalement héritier avant la fin du mois où il atteint 18 ans.'],
-        ['Q143','Quel montant est versé lors du décès couvert d’un enfant ?','Les conditions décrivent un prixbasbelopp versé à la succession de l’enfant, sauf autre désignation valable.'],
-        ['Q145','Le certificat ABAS mentionne-t-il explicitement la protection enfant ?','Non, aucune ligne séparée “Barnskydd” n’apparaît. Comme les conditions standard la décrivent mais que le certificat mentionne vie et capital anticipé, ABAS doit obtenir une confirmation écrite de If.']
-      ]},
+     
       {title:'Capital anticipé (förtidskapital)',source:'Vie §5.3, Villkor p. 23–24',items:[
         ['Q146','Qu’est-ce que le capital anticipé ?','Une prestation forfaitaire versée du vivant de l’assuré en cas d’incapacité de travail durable répondant aux conditions, due à une maladie ou un accident. Ce n’est pas une prestation funéraire ou de décès.'],
         ['Q147','Puis-je y avoir droit après une courte maladie ou un arrêt temporaire ?','Non. Les conditions exigent au moins 25 % d’incapacité pendant 30 mois au total sur 36 mois, ou au moins 50 % de sjukersättning accordée par Försäkringskassan.'],
@@ -252,6 +255,11 @@ window.ABAS_QA = {
         ['Q154','Le montant reste-t-il inchangé avec l’âge ?','Non. À partir de 30 ans, le montant assuré diminue de 3 % par an par rapport à l’année précédente ; la réduction est donc composée.'],
         ['Q155','La règle des 30 mois peut-elle être remplie pendant la première année de police ABAS ?','Les conditions exigent que la durée qualifiante soit acquise pendant l’assurance. ABAS doit demander à If si elle peut s’étendre sur plusieurs renouvellements, si une période antérieure compte et comment fonctionne la voie via la sjukersättning.'],
         ['Q156','Un capital anticipé peut-il réduire ce que ma famille reçoit à mon décès ?','Oui. Le tableau du §5.1.5 peut réduire le capital décès ultérieur, en plus des autres règles liées à l’âge. L’interaction doit être confirmée avec If.']
+      ]},
+       {title:'Protection enfant',source:'Vie §5.2, Villkor p. 23',items:[
+        ['Q140','Qu’est-ce que la protection enfant (barnskydd) ?','Les conditions standard vie décrivent une prestation en cas de décès d’un enfant légalement héritier avant la fin du mois où il atteint 18 ans.'],
+        ['Q143','Quel montant est versé lors du décès couvert d’un enfant ?','Les conditions décrivent un prixbasbelopp versé à la succession de l’enfant, sauf autre désignation valable.'],
+        ['Q145','Le certificat ABAS mentionne-t-il explicitement la protection enfant ?','Non, aucune ligne séparée “Barnskydd” n’apparaît. Comme les conditions standard la décrivent mais que le certificat mentionne vie et capital anticipé, ABAS doit obtenir une confirmation écrite de If.']
       ]},
       {title:'Exclusions importantes',source:'Vie §5.4, Villkor p. 24',items:[
         ['Q157','Les décès ou blessures liés à la guerre ou à un conflit armé sont-ils couverts ?','En principe non lorsqu’ils sont attribuables à la guerre, au conflit armé ou aux missions de maintien de la paix/assimilées visées, sous réserve de l’exception étroite de 30 jours.'],
