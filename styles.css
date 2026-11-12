@@ -116,6 +116,17 @@ button,input,textarea{font:inherit}
 .btn.primary{background:var(--navy);color:#fff}
 .btn.secondary{background:rgba(255,255,255,.84);color:var(--navy);border-color:var(--gold-soft)}
 .btn.gold{background:var(--gold);border-color:var(--gold);color:#162f55}
+.participate-btn{
+    background:var(--gold);
+    color:var(--navy);
+    border-color:var(--gold);
+    font-weight:900;
+}
+
+.participate-btn:hover{
+    background:#f5c438;
+    color:var(--navy);
+}
 
 /* The scene stays on the right and extends slightly left.
    A cream overlay fades away so the scene progressively appears. */
