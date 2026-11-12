@@ -338,9 +338,35 @@ body[data-lang="en"] .page-hero,body[data-lang="fr"] .page-hero{background-image
 .qa-row{
     display:grid;
     grid-template-columns:1fr;
+    border-bottom:1px solid var(--line);
+    background:#fff;
 }
-.qa-row:nth-child(even){background:#fcfbf7}.qa-question,.qa-answer{padding:16px 20px;} /*;line-height:1.55*/
+
 .qa-question{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    padding:16px 20px 5px;
+    border-right:none;
+    border-bottom:none;
+    line-height:1.35;
+}
+
+.qa-answer{
+    padding:4px 20px 16px;
+    line-height:1.45;
+    color:#53627a;
+}
+.qa-row:nth-child(even){background:#fcfbf7}
+/*.qa-question,.qa-answer{padding:16px 20px;} ;line-height:1.55*/
+.qa-question{
+    padding:14px 20px 2px;
+}
+
+.qa-answer{
+    padding:2px 20px 14px;
+}
+/*.qa-question{
     display:flex;
     gap:12px;
     align-items:flex-start;
@@ -351,7 +377,7 @@ body[data-lang="en"] .page-hero,body[data-lang="fr"] .page-hero{background-image
     padding-top:14px;
     padding-bottom:18px;
 }
-/*.qa-question{display:flex;gap:10px;align-items:flex-start;color:var(--ink);border-right:1px solid var(--line)}*/
+.qa-question{display:flex;gap:10px;align-items:flex-start;color:var(--ink);border-right:1px solid var(--line)}*/
 .qa-code{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:42px;padding:3px 7px;border-radius:999px;background:#eaf0f8;color:var(--navy);font-size:11px;font-weight:900}
 .qa-question strong{font-size:14px}.qa-answer{color:#53627a;font-size:14px}
 .qa-reduction-wrap{margin:18px 0 0;overflow:auto;border:1px solid var(--line);border-radius:12px}.qa-reduction{width:100%;border-collapse:collapse;background:#fff;font-size:13px}.qa-reduction th,.qa-reduction td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left}.qa-reduction th{background:#f4f7fb;color:var(--ink)}
@@ -385,8 +411,10 @@ body[data-lang="en"] .page-hero,body[data-lang="fr"] .page-hero{background-image
 /* Q&A reading width: wider desktop canvas so questions and answers wrap less */
 body[data-page="qa"] .page-shell{width:min(1560px,calc(100% - 48px));}
 body[data-page="qa"] .qa-guide{max-width:none;}
-body[data-page="qa"] .qa-layout{grid-template-columns:minmax(260px,320px) minmax(0,1fr);gap:28px;}
-body[data-page="qa"] .qa-row{grid-template-columns:minmax(320px,34%) minmax(0,1fr);}
+body[data-page="qa"] .qa-row{
+    grid-template-columns:1fr;
+}
+/*body[data-page="qa"] .qa-row{grid-template-columns:minmax(320px,34%) minmax(0,1fr);}*/
 @media(max-width:900px){
   body[data-page="qa"] .page-shell{width:min(100%,calc(100% - 28px));}
   body[data-page="qa"] .qa-layout{grid-template-columns:1fr;}
