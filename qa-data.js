@@ -16,10 +16,10 @@ window.ABAS_QA = {
     ],
     downloads: {
       focus: 'Most Important Q&A',
-      full: 'All Q&A',
       agreement: 'If Agreement (Avtal)',
       conditions: 'If General conditions (Villkor)',
-      participate:'I want to participate / withdraw from the insurance'
+      participate:'I want to participate / withdraw from the insurance',
+      full: 'All Q&A'
     },
     sections: [
       {title:'Key contract and claims questions', source:'Villkor pp. 6–20', items:[
@@ -112,7 +112,7 @@ window.ABAS_QA = {
     policy:[['Försäkringstagare','ABAS – Association of Bamiléké in Sweden'],['Försäkringsnummer','SP7980239.1.2'],['Försäkringstid','1 januari–31 december 2027'],
     ['Namngivna personer','24 i försäkringsbrevets bilaga'],['Månadspremie','SEK 89'],['Årspremie','1070 SEK'],
     ['Dödsfall / förtidskapital','15 Bb vardera enligt ABAS försäkringsbrev'],['Självrisk för livförsäkring','Ingen (Liv §7)']],
-    downloads:{focus:'Viktigaste Q&A',full:'Alla Q&A',agreement:'If-avtal',conditions:'If:s allmänna villkor', participate:'Jag vill delta / dra tillbaka mitt deltagande'},
+    downloads:{focus:'Viktigaste Q&A',agreement:'If-avtal',conditions:'If:s allmänna villkor', participate:'Jag vill delta / dra tillbaka mitt deltagande',full:'Alla Q&A'},
     sections:[
       {title:'Viktiga avtals- och skadefrågor',source:'Villkor s. 6–20',items:[
         ['Q25','När ska dödsfall, sjukdom eller annan försäkringshändelse anmälas?','Anmäl till If utan dröjsmål. En sen anmälan kan påverka ersättningen; de detaljerade reglerna finns i allmänna villkor §2.3.'],
@@ -204,7 +204,7 @@ window.ABAS_QA = {
     policy:[['Souscripteur','ABAS – Association of Bamiléké in Sweden'],['Numéro d’assurance','SP7980239.1.2'],
     ['Période','1 janvier–31 décembre 2027'],['Personnes nommées','24 dans l’annexe du certificat'],
     ['Prime mensuelle','89 SEK'],['Prime annuelle','1070 SEK'],['Décès / capital anticipé','15 Bb chacun selon le certificat ABAS'],['Franchise de l’assurance-vie','Aucune (Vie §7)']],
-    downloads:{focus:'Q&A importantes',full:'Q&A complète',agreement:'Contrat If (Avtal)',conditions:'Conditions générales If (Villkor)',participate:'Je souhaite participer / retirer ma participation'},
+    downloads:{focus:'Q&A importantes',agreement:'Contrat If (Avtal)',conditions:'Conditions générales If (Villkor)',participate:'Je souhaite participer / retirer ma participation',full:'Q&A complète'},
     sections:[
       {title:'Questions clés sur le contrat et les sinistres',source:'Villkor p. 6–20',items:[
         ['Q25','Quand faut-il déclarer un décès, une maladie ou un autre événement assuré ?','Il faut le déclarer à If sans délai. Une déclaration tardive peut affecter l’indemnisation ; les règles détaillées figurent au §2.3 des conditions générales.'],
