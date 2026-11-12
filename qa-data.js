@@ -112,7 +112,7 @@ window.ABAS_QA = {
     policy:[['Försäkringstagare','ABAS – Association of Bamiléké in Sweden'],['Försäkringsnummer','SP7980239.1.2'],['Försäkringstid','1 januari–31 december 2027'],
     ['Namngivna personer','24 i försäkringsbrevets bilaga'],['Månadspremie','SEK 89'],['Årspremie','1070 SEK'],
     ['Dödsfall / förtidskapital','15 Bb vardera enligt ABAS försäkringsbrev'],['Självrisk för livförsäkring','Ingen (Liv §7)']],
-    downloads:{focus:'Viktigaste Q&A',full:'Alla Q&A',agreement:'If-avtal',conditions:'If:s allmänna villkor', participate:'Jag vill delta / dra tillbaka mitt deltagande','Jag vill delta / dra tillbaka mitt deltagande'},
+    downloads:{focus:'Viktigaste Q&A',full:'Alla Q&A',agreement:'If-avtal',conditions:'If:s allmänna villkor', participate:'Jag vill delta / dra tillbaka mitt deltagande'},
     sections:[
       {title:'Viktiga avtals- och skadefrågor',source:'Villkor s. 6–20',items:[
         ['Q25','När ska dödsfall, sjukdom eller annan försäkringshändelse anmälas?','Anmäl till If utan dröjsmål. En sen anmälan kan påverka ersättningen; de detaljerade reglerna finns i allmänna villkor §2.3.'],
