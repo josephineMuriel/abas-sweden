@@ -189,7 +189,7 @@ function renderQaGuide(qd){
       </a>
 
       <a class="btn participate-btn"
-         href="https://forms.gle/mwW33D3T1kRHyYG5A"
+         href="https://forms.gle/bsS9GwtnVWB8Wfnh7" 
          target="_blank"
          rel="noopener">
         ${qd.downloads.participate} ↗
@@ -199,7 +199,7 @@ function renderQaGuide(qd){
          href="docs/ABAS_Member_RPN_QuestionsAndAnswersFull.docx">
         ${qd.downloads.full} ↓
       </a>
-      
+
     </div>
 
     <p class="lead">${qd.intro}</p>
