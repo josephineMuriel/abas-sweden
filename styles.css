@@ -366,3 +366,14 @@ body[data-lang="en"] .page-hero,body[data-lang="fr"] .page-hero{background-image
 /* Keep the large test banner at the true top of authentication pages too */
 .portal-page{grid-template-columns:1fr;grid-template-rows:auto 1fr;padding:0 30px 30px}
 .portal-page>.test-site-disclaimer{grid-column:1;width:calc(100% + 60px);margin:0 -30px 30px}
+
+/* Q&A reading width: wider desktop canvas so questions and answers wrap less */
+body[data-page="qa"] .page-shell{width:min(1560px,calc(100% - 48px));}
+body[data-page="qa"] .qa-guide{max-width:none;}
+body[data-page="qa"] .qa-layout{grid-template-columns:minmax(260px,320px) minmax(0,1fr);gap:28px;}
+body[data-page="qa"] .qa-row{grid-template-columns:minmax(320px,34%) minmax(0,1fr);}
+@media(max-width:900px){
+  body[data-page="qa"] .page-shell{width:min(100%,calc(100% - 28px));}
+  body[data-page="qa"] .qa-layout{grid-template-columns:1fr;}
+  body[data-page="qa"] .qa-row{grid-template-columns:1fr;}
+}

@@ -3,7 +3,7 @@ window.ABAS_QA = {
     kicker: 'Member insurance',
     title: 'Insurance explained — Questions & Answers',
     intro: 'A web-friendly focused guide to the ABAS group life insurance. Questions are on the left and answers on the right. This guide is explanatory and does not replace the If agreement or insurance conditions.',
-    note: 'Important: where the certificate and standard wording appear to differ, or the wording is unclear, ABAS should obtain written confirmation from If.',
+    note: '',
     policy: [
       ['Policyholder','ABAS — Association of Bamiléké in Sweden'],
       ['Insurance number','SP7980239.1.2'],
@@ -14,7 +14,10 @@ window.ABAS_QA = {
       ['Life insurance deductible','None (Life §7)']
     ],
     downloads: {
-      focus: 'Download original Focus Q&A', full: 'Download Full Q&A', source: 'Download If agreement + conditions'
+      focus: 'Focused Q&A',
+      full: 'Full Q&A',
+      agreement: 'If Agreement (Avtal)',
+      conditions: 'If General conditions (Villkor)'
     },
     sections: [
       {title:'Key contract and claims questions', source:'Villkor pp. 6–20', items:[
@@ -102,9 +105,9 @@ window.ABAS_QA = {
   sv: {
     kicker:'Medlemsförsäkring', title:'Försäkringen förklarad — frågor och svar',
     intro:'En webbvänlig fokuserad guide till ABAS grupp-livförsäkring. Frågorna visas till vänster och svaren till höger. Guiden är förklarande och ersätter inte If:s avtal eller försäkringsvillkor.',
-    note:'Viktigt: när försäkringsbrevet och standardvillkoren verkar skilja sig åt, eller texten är oklar, bör ABAS begära skriftlig bekräftelse från If.',
+    note:'',
     policy:[['Försäkringstagare','ABAS – Association of Bamiléké in Sweden'],['Försäkringsnummer','SP7980239.1.2'],['Försäkringstid','1 januari–31 december 2027'],['Namngivna personer','24 i försäkringsbrevets bilaga'],['Årspremie','26 710 SEK'],['Dödsfall / förtidskapital','15 Bb vardera enligt ABAS försäkringsbrev'],['Självrisk för livförsäkring','Ingen (Liv §7)']],
-    downloads:{focus:'Ladda ner originalet Focus Q&A',full:'Ladda ner Full Q&A',source:'Ladda ner If-avtal + villkor'},
+    downloads:{focus:'Fokuserad Q&A',full:'Full Q&A',agreement:'If-avtal',conditions:'If:s allmänna villkor'},
     sections:[
       {title:'Viktiga avtals- och skadefrågor',source:'Villkor s. 6–20',items:[
         ['Q25','När ska dödsfall, sjukdom eller annan försäkringshändelse anmälas?','Anmäl till If utan dröjsmål. En sen anmälan kan påverka ersättningen; de detaljerade reglerna finns i allmänna villkor §2.3.'],
@@ -191,9 +194,9 @@ window.ABAS_QA = {
   fr: {
     kicker:'Assurance des membres', title:'L’assurance expliquée — Questions & Réponses',
     intro:'Un guide ciblé et adapté au web sur l’assurance-vie collective ABAS. Les questions sont à gauche et les réponses à droite. Ce guide est explicatif et ne remplace ni le contrat ni les conditions d’assurance If.',
-    note:'Important : lorsque le certificat et les conditions standard semblent diverger, ou lorsque le texte est ambigu, ABAS doit demander une confirmation écrite à If.',
+    note:'',
     policy:[['Souscripteur','ABAS – Association of Bamiléké in Sweden'],['Numéro d’assurance','SP7980239.1.2'],['Période','1 janvier–31 décembre 2027'],['Personnes nommées','24 dans l’annexe du certificat'],['Prime annuelle','26 710 SEK'],['Décès / capital anticipé','15 Bb chacun selon le certificat ABAS'],['Franchise de l’assurance-vie','Aucune (Vie §7)']],
-    downloads:{focus:'Télécharger le Focus Q&A original',full:'Télécharger le Full Q&A',source:'Télécharger contrat + conditions If'},
+    downloads:{focus:'Q&A ciblée',full:'Q&A complète',agreement:'Contrat If (Avtal)',conditions:'Conditions générales If (Villkor)'},
     sections:[
       {title:'Questions clés sur le contrat et les sinistres',source:'Villkor p. 6–20',items:[
         ['Q25','Quand faut-il déclarer un décès, une maladie ou un autre événement assuré ?','Il faut le déclarer à If sans délai. Une déclaration tardive peut affecter l’indemnisation ; les règles détaillées figurent au §2.3 des conditions générales.'],
