@@ -189,7 +189,7 @@ function renderQaGuide(qd){
       </a>
 
       <a class="btn participate-btn"
-         href="https://forms.gle/g6DqS6NDCb2sFj779" 
+         href="https://forms.gle/AuUQ73uSMLtNxZHz9" 
          target="_blank"
          rel="noopener">
         ${qd.downloads.participate} ↗
